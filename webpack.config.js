@@ -10,7 +10,7 @@ module.exports = {
     entry: path.resolve("index.tsx"),
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js"
+        filename: "[name].main.js"
     },
     module: {
         rules: [
