@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default class ChartBar extends React.Component {
-    render () {
+    public render() {
         return (
             <div>
                 <h1> CHART BAR</h1>
             </div>
-        )
+        );
     }
 }

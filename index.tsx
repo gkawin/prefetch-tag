@@ -1,7 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { HashRouter as Router, Route, Link  } from 'react-router-dom'
-import Loadable from 'react-loadable'
+import React from "react";
+import { render } from "react-dom";
+import Loadable from "react-loadable";
+import { HashRouter as Router, Link, Route  } from "react-router-dom";
 
 const Home = () => (
     <div>
@@ -10,18 +10,17 @@ const Home = () => (
 );
 
 const ChartBarLoadableComponent = Loadable({
-    loader: () => import(/* webpackPrefetch: true */ './ChartBar'),
+    loader: () => import(/* webpackPrefetch: true */ "./ChartBar"),
     loading: () => <div>loading</div>,
 });
 
 const AboutLoadableComponent = Loadable({
-    loader: () => import(/* webpackPrefetch: true */ './About'),
+    loader: () => import(/* webpackPrefetch: true */ "./About"),
     loading: () => <div>loading</div>,
 });
 
-
 class App extends React.Component {
-    render () {
+    public render() {
         return (
             <Router>
                 <div>
@@ -39,13 +38,13 @@ class App extends React.Component {
 
                     <hr />
 
-                    <Route exact path="/" render={Home} />
+                    <Route exact={true} path="/" render={Home} />
                     <Route path="/chartbar" component={ChartBarLoadableComponent} />
                     <Route path="/about" component={AboutLoadableComponent} />
                 </div>
             </Router>
-        )
+        );
     }
 }
 
-render(<App/>, document.getElementById("app"))
+render(<App/>, document.getElementById("app"));
