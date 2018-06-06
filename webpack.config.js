@@ -1,7 +1,7 @@
 //@ts-check
-
 const webpack = require('webpack')
 const path = require('path')
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 const prod = process.env.NODE_ENV.trim() === "production"
 
@@ -21,6 +21,9 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"]
     },
     plugins: [
-       prod && new webpack.HotModuleReplacementPlugin()
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "index.html")
+        }),
+       !prod && new webpack.HotModuleReplacementPlugin()
     ].filter(Boolean)
 }

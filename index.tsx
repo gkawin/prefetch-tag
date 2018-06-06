@@ -10,12 +10,12 @@ const Home = () => (
 );
 
 const ChartBarLoadableComponent = Loadable({
-    loader: () => import(/* webpackPrefetch: true */ "./ChartBar"),
+    loader: () => import(/* webpackPrefetch: true */ /* webpackChunkName: "ChartBar" */ "./ChartBar"),
     loading: () => <div>loading</div>,
 });
 
 const AboutLoadableComponent = Loadable({
-    loader: () => import(/* webpackPrefetch: true */ "./About"),
+    loader: () => import(/* webpackPrefetch: true */ /* webpackChunkName: "About" */ "./About"),
     loading: () => <div>loading</div>,
 });
 
