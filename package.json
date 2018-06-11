@@ -17,13 +17,12 @@
     "url": "https://github.com/gkawin/prefetch-tag/issues"
   },
   "homepage": "https://github.com/gkawin/prefetch-tag#readme",
-  "dependencies": {
-    "lerna": "^2.11.0"
-  },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "jest": "^23.1.0",
+    "lerna": "^2.11.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.1"
   }
