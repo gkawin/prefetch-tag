@@ -7,11 +7,8 @@ const prod = process.env.NODE_ENV.trim() === "production"
 
 module.exports = {
     devtool: "source-map",
-    mode: prod ? "production" : "development",
-    entry:{ 
-        main: path.resolve("index.tsx"),
-        foo: path.resolve("foo.ts"),
-    },
+    mode: "development",
+    entry:{ },
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].js"
