@@ -5,6 +5,7 @@
   "description": "Webpack 4 had has a `prefetch` while dynamic import. we try to use the stat object file to generate HTML link tags.",
   "main": "index.js",
   "scripts": {
+    "clean": "lerna clean -y",
     "bootstrap": "lerna bootstrap",
     "dev:client": "lerna run dev --stream"
   },
