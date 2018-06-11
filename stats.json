@@ -1,0 +1,20 @@
+{
+  "assetsByChunkName": {
+    "About": [
+      "About.js",
+      "About.js.map"
+    ],
+    "ChartBar": [
+      "ChartBar.js",
+      "ChartBar.js.map"
+    ],
+    "foo": [
+      "foo.js",
+      "foo.js.map"
+    ],
+    "main": [
+      "main.js",
+      "main.js.map"
+    ]
+  }
+}
