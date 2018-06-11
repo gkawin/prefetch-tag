@@ -2,7 +2,6 @@
 const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const StatsWriterPlugin = require("webpack-stats-plugin").StatsWriterPlugin;
 
 const prod = process.env.NODE_ENV.trim() === "production"
 
